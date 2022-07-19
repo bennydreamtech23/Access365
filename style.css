@@ -65,6 +65,19 @@ body {
         left: 0;
     }
     
+#navmenu .nav-item{
+position:relative;
+      }
+
+        
+
+      
+
+   
+
+    
+
+
     #navmenu .navbar-nav li:hover ul.dropdown{
         display: block;	/* Display the dropdown */
     }
@@ -85,7 +98,7 @@ body {
 .dropdown-content{
      display: flex;
      flex-direction: row;
-     background-color:#c0c0c0;
+     background-color:#fff;
      padding: 3px 15px;
      margin-top: 10px;
      overflow-y: auto;
