@@ -23,7 +23,7 @@ body {
    position: fixed;
    top:0px;
    left: 0;
-   background-color:#c0c0c0;
+   background-color:#fff;
    width: 100%;
    border-bottom: 2px solid #e8e8e8;
 }
@@ -2123,7 +2123,7 @@ font-family: 'Noto Sans';
   padding: 0px 20px;
   border:none;
   display: inline-block;
-  width: 130px;
+  width: 140px;
 }
 
 .logo img{
