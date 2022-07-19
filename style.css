@@ -1764,52 +1764,111 @@ position:relative;
   background:#f88000;
 }
 
+.container8{
 
+  margin: 80px auto;
 
-
-tr:nth-child(even){
-    background-color:#f88000;
-    }
+}
 
 table{
+
   width: 100%;
+
   border-collapse: collapse;
-    table-layout:fixed;
+
 }
 
+.small-cart-container{
 
+  display: flex;
+
+  flex-wrap: wrap;
+
+}
 
 th{
+
   text-align: left;
+
   padding: 5px;
+
   background: #f88000;
+
   color: white;
+
   font-weight: bold;
+
   font-family: 'Noto Sans';
+
 }
 
-td, tr{
-  padding: 8px;
+td{
+
+  padding: 10px 5px;
+
   border-bottom: 1px solid #68b038;
-    text-align:left;
+
 }
 
 .small-cart-container p{
+
   font-family: 'Noto Sans';
+
 }
 
+td:last-child{
 
+  text-align: right;
 
+}
+
+th:last-child{
+
+  text-align: right;
+
+  font-weight: bold;
+
+}
 
 #container8 .bi-check{
+
   color: #68b038;
+
   font-size: 20px;
+
 }
 
 #container8 .bi-x{
+
   color: red;
+
   font-size: 20px;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #overlay-bg04{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./images/jon-tyson-kR4K8nJ9JRc-unsplash.jpg");
