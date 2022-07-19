@@ -1766,7 +1766,7 @@ table{
 }
 
 th{
-  text-align: left;
+  text-align: right;
   padding: 5px;
   background: #f88000;
   color: white;
@@ -1784,14 +1784,7 @@ td{
 }
 
 
-td:last-child{
-  text-align: left;
-}
 
-th:last-child{
-  text-align: left;
-  font-weight: bold;
-}
 
 #container8 .bi-check{
   color: #68b038;
