@@ -1,0 +1,2183 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html, body {
+    overflow-x:hidden;
+    width:100%; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15pt;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+/*----header---*/
+.top{
+   position: fixed;
+   top:0px;
+   left: 0;
+   background-color:#c0c0c0;
+   width: 100%;
+   border-bottom: 2px solid #e8e8e8;
+}
+
+ .logo{
+   background-color: #c0c0c0;
+   padding: 0px 20px;
+   border:none;
+   display: inline-block;
+   width: 110px;
+}
+
+.logo img{
+   width: 110px;
+}
+
+.nav-item .nav-link{
+   font-size: 15px;
+   color: black;
+}
+
+.nav-item .nav-link:hover{
+  color: #68b038;
+}
+
+.nav-item #navlink{
+   width: 90px;
+}
+
+.nav-item #navlink1{
+   width: 100px;
+}
+
+#navmenu .navbar-nav li ul.dropdown{
+        min-width: 300px; /* Set width of the dropdown */
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    
+    #navmenu .navbar-nav li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+    }
+    
+    #navmenu .navbar-nav li ul.dropdown li{
+        display: block;
+        border-bottom: 1px solid #808888;
+        padding: 10px 5px;
+    }
+    
+       #navmenu .navbar-nav li ul.dropdown li a{
+        color: #333;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 15px;
+    }
+       
+.dropdown-content{
+     display: flex;
+     flex-direction: row;
+     background-color:#c0c0c0;
+     padding: 3px 15px;
+     margin-top: 10px;
+     overflow-y: auto;
+}
+
+.dropdown-content li{
+   border-bottom: 1px solid lightgrey;
+}
+
+.dropdown-content h4{
+   font-size: 16px;
+   padding-top: 10px;
+}
+
+/*---phone animation---*/
+#navmenu .phone{
+   width: 50px;
+   height: 50px;
+   background: #68b038;
+   display: grid;
+   place-items: center;
+   border: 1px solid #68b038;
+   margin-left: 10px;
+   border-radius: 50%;
+   position: relative;
+}
+
+#navmenu .phone::before{
+   content: "";
+   position: absolute;
+   height: calc(100% + 20px);
+   width: calc(100% + 20px);
+   border: 2px solid #68b038;
+   border-radius: 50%;
+   animation: pulse 1.5s linear infinite;
+}
+
+#navmenu .phone::after{
+   content: "";
+   position: absolute;
+   height: calc(100% + 20px);
+   width: calc(100% + 20px);
+   border: 2px solid #68b038;
+   border-radius: 50%;
+   animation: pulse 1.5s linear infinite;
+   animation-delay: 0.5s;
+}
+
+@keyframes pulse{
+  0%{
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  
+  50%{
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  
+  100%{
+    transform: scale(0.8);
+    opacity: 0;
+  }
+ 
+}
+
+#navmenu .bi-telephone{
+   font-size: 22px;
+   color: white;
+   font-weight: bolder;
+   animation: pulser 0.5s linear infinite;
+}
+
+@keyframes pulser{
+  0%{
+    transform: scale(0.5);
+    color: #f88000;
+  }
+  
+  50%{
+    transform: scale(5);
+  }
+  
+ 100%{
+   transform: scale(0.8);
+ }
+}
+
+#quote-btn1 .nav-link{
+   background: #68B038;
+   color: white;
+   font-size: 15px;
+   width: 95px;
+   text-align: center;
+   height: 40px;
+   font-weight: bold;
+}
+
+#quote-btn1 .nav-link:hover{
+   background: #f88000;
+}
+
+#quote-btn2{
+   font-size: 17px;
+   font-weight: bold;
+}
+
+#quotebtn1{
+   font-size: 14px;
+   font-weight: bold;
+   margin: 0px;
+   padding: 0px;
+   margin-left: 5px;
+}
+
+.hamburger{
+   display: none;
+   cursor: pointer;
+} 
+
+  
+  .bars{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    color: black;
+    background: black;
+  }
+   
+   .bg-overlay{
+     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/inaki-del-olmo-Trn2-DwoEr0-unsplash.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+   }
+   
+    .bg-overlay h2{
+      color: white;
+      font-size: 17px;
+      font-weight: normal;
+      font-family: 'Noto Sans';
+      opacity: 0.7;
+    }
+    
+    .bg-overlay h1{
+      color: white;
+      font-size: 35px;
+      font-family: 'Noto Sans';
+      font-weight: bolder;
+    }
+    
+    .bg-overlay p{
+      color: white;
+      font-size: 15px;
+      opacity: 0.9;
+      font-family: 'Noto Sans';
+    }
+    
+    #overlay-btn{
+      border:none;
+      background: #f88000;
+      padding: 10px 15px;
+      border-radius: 2px;
+      color: white;
+      font-weight: bold;
+      transition: 0.5s;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+    
+   #overlay-btn:hover{
+      background: #68b038;
+      transform: translateX(3px);
+    }
+    
+      #overlay-btn1:hover{
+      background: #68b038;
+      transform: translateX(3px);
+      color: white;
+    }
+    
+      #overlay-btn1{
+      border:none;
+      background: white;
+      padding: 10px 15px;
+      border-radius: 2px;
+      color: black;
+      font-weight: bold;
+      transition: 0.5s;
+      text-decoration: none;
+    }
+    
+    .bg-overlay .hidden{
+      background: white;
+      width: 200px;
+      height: 200px;
+      padding: 10px 15px;
+      box-shadow: 6px 7px 10px rgba(0,0,0,0.5);
+      margin-top: 10px;
+      margin-left: 150px;
+    }
+    
+    .hidden img{
+      width: 100px;
+      margin: 0 auto;
+      border: 2px solid #808888;
+      display: flex;
+    } 
+    
+    .hidden h1{
+      color: black;
+      font-size: 18px;
+      text-align: center;
+      font-family: 'Noto Sans';
+    }
+    
+    .hidden p{
+      font-size: 10px;
+      color: black;
+      line-height: 15px;
+      text-align: center;
+      padding:10px;
+      font-family: 'Noto Sans';
+    }
+    
+    .hidden2{
+      margin-top: 10px;
+      margin-left: 150px;
+    }
+    
+    .hidden2 span{
+      color: white;
+      font-size: 12px;
+    }
+    
+    /*----section2---*/
+    
+      #overlay-btn2:hover{
+      background: #68b038;
+      transform: translateX(3px);
+      color: white;
+    }
+    
+      #overlay-btn2{
+      border:none;
+      background: black;
+      padding: 10px 15px;
+      border-radius: 2px;
+      color: white;
+      font-weight: bold;
+      transition: 0.5s;
+      text-decoration: none;
+    }
+    
+.container4 h1{
+   margin-top: 10px;
+   font-size: 27px;
+   font-weight: bold;
+   font-family:'Noto Sans';
+   padding-top:5px;
+}
+
+.container4 .img{
+   border-radius: 7px;
+   width: 350px;
+   margin-top: 25px;
+   margin-left: 70px;
+}
+
+#container4-text{
+   border-left: 5px solid #c0c0c0;
+   padding-left: 10px;
+}
+
+.container4 p{
+   padding-top: 5px;
+   font-family: 'Noto Sans';
+   font-size: 15px;
+   line-height: 30px;
+   margin-bottom: 10px;
+}
+
+.container4 a{
+   text-decoration: none;
+   color: black;
+}
+
+.container4 h2{
+   margin-top: 10px;
+   font-size: 21px;
+   font-weight: bold;
+   font-family:'Noto Sans';
+   padding-top:5px;
+}
+
+.container4 ul{
+   list-style: none;
+}
+
+.container4 li div{
+   width: 10px;
+   height: 10px;
+   background-color: #f88000;
+   display: inline-block;
+   margin-right: 10px;
+   border-radius: 50%;
+}
+
+.container4 li{
+   padding: 10px 15px;
+   border-bottom: 1px solid #c0c0c0;
+   font-size: 15px;
+   font-family: 'Noto Sans';
+}
+
+
+/*-----section3-----*/
+
+  #bg{
+     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url("./images/jon-tyson-kR4K8nJ9JRc-unsplash.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+   }
+   
+.container5 h1{
+   margin-top: 10px;
+   font-size: 35px;
+   font-weight: bold;
+   font-family:'Noto Sans';
+   padding-top:5px;
+}
+
+.container5 p{
+   line-height: 30px;
+   padding-top: 5px;
+   font-family: 'Noto Sans';
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.container5 a{
+   text-decoration: none;
+   color: black;
+}
+
+.roller .col{
+   font-family:'Noto Sans';
+   font-weight: bold;
+   color: white;
+   border: 1px solid white;
+   transition: 0.5s;
+   width: 200px;
+   height: 250px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-around;
+}
+
+.roller .col:hover{
+   background: #68b038;
+   transform: translateY(-15px);
+   color: white;
+}
+
+.roller .col h3{
+   font-family: 'Noto Sans';
+   font-size: 22px;
+   color: white;
+   font-weight: bold;
+}
+
+.container5 h4{
+   font-family:'Noto Sans';
+   color: white;
+   font-size:19px;
+   font-weight: bold;
+   display: inline-block;
+}
+
+.container5 .small{
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   display: inline-block;
+   float: right;
+   background: #f88000;
+}
+
+.small .bi-arrow-up-circle{
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   align-self: center;
+   margin-top: 10px;
+   color: #f88000;
+}
+
+.container5 h5{
+   font-family:'Noto Sans';
+   color: silver;
+   margin-top: 30px;
+   font-size:16px;
+}
+
+
+/*-----section4-----*/
+
+.container6{
+   background: #e8e8e8;
+}
+
+.container6 h1{
+   margin-top: 10px;
+   font-size: 27px;
+   font-weight: bold;
+   font-family:'Noto Sans';
+   padding-top:5px;
+}
+
+.container6 h2{
+   margin-top: 10px;
+   font-size: 23px;
+   font-weight: normal;
+   font-family:'Noto Sans';
+   padding-top:5px;
+   color: #f88000;
+}
+
+.container6 p{
+   line-height: 30px;
+   padding-top: 5px;
+   font-family: 'Noto Sans';
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.container6 a{
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   font-size: 17px;
+}
+
+.container6 #btn-1{
+   border-bottom: 2px solid #f88000;
+}
+
+.container6 .bi-arrow-right-circle-fill{
+   color: #f88000;
+}
+.container6 strong{
+   padding-top: 20px;
+   font-weight: normal;
+   font-size: 16px;
+   font-family: 'Noto Sans';
+}
+
+.roller1{
+   padding-top: 30px;
+}
+
+.roller1 .col{
+   font-family: 'Noto Sans';
+   font-weight: bold;
+   color: black;
+   transition: 0.5s;
+   height: 430px;
+   padding: 10px 15px;
+   background: white;
+   border: 0.5px solid #c0c0c0;
+}
+
+.roller1 .col:hover{
+   background: #68b038;
+   transform: translateY(-15px);
+   color: white;
+}
+
+.roller1 .col h1{
+   font-family:'Noto Sans';
+   font-size: 24px;
+   color: black;
+   font-weight: bold;
+}
+
+.roller1 .col p{
+   font-family: 'Noto Sans';
+   font-size: 15px;
+   color: black;
+   font-weight: normal;
+}
+
+.roller1 .col img{
+   margin-top: 10px;
+   width: 50px;
+}
+
+.container6 .info{
+   background: white;
+   margin-top: 10px;
+   padding: 10px 20px; 
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   border-radius: 2px;
+}
+
+.info  > .bi-people-fill{
+   color: #808888;
+   background: black;
+   padding: 10px 10px;
+   border-radius: 50%;
+   margin: 0 auto;
+   display: flex;
+   font-size: 30px;
+}
+
+ .info p{
+   font-family: 'Noto Sans';
+   font-size: 15px;
+   margin-left: 10px;
+   opacity: 0.6;
+}
+
+.info #btn-3{
+   border-bottom: 2px solid #f88000; 
+}
+
+.quote{
+   background: #68B038;
+   padding: 30px 20px; 
+   border-radius: 10px;
+   width: 100%;
+   margin-top: 20px;
+   text-align: center;
+   transition: 0.5s;
+}
+
+.quote:hover{
+   background: #f88000;
+   transform: translateY(15px);
+}
+
+.quote a{
+   font-size: 27px;
+   text-align: center;
+   font-family: 'Noto Sans';
+   font-weight: bold;
+   color: white;
+   border: 2px solid white;
+   padding: 5px 10px; 
+}
+
+
+/*-----section6-----*/
+
+.container7{
+   background: #181818;
+}
+.container7 h1{
+   margin-top: 10px;
+   font-size: 27px;
+   font-weight: bolder;
+   font-family:'Noto Sans';
+   padding-top:5px;
+   color: white;
+}
+
+.container7 h2{
+   margin-top: 10px;
+   font-size: 23px;
+   font-weight: normal;
+   font-family:'Noto Sans';
+   padding-top:5px;
+   color: #f88000;
+}
+
+.container7 h3{
+   margin-top: 10px;
+   font-size: 19px;
+   font-family:'Noto Sans';
+   padding-top:5px;
+   color:white;
+   font-weight: 400;
+}
+
+.container7 h4{
+   margin-top: 10px;
+   font-size: 19px;
+   font-weight: normal;
+   font-family:'Noto Sans';
+   padding-top:5px;
+   color:white;
+}
+
+.container7 p{
+   line-height: 30px;
+   padding-top: 5px;
+   font-family: 'Noto Sans';
+   font-size: 15px;
+   font-weight: 400;
+   color: white;
+   opacity: 0.7;
+}
+
+.container7 ul{
+   list-style: none;
+}
+
+.container7 li{
+   font-size: 16px;
+   color: white;
+}
+
+.container7 .bi-check{
+   color: #f88000;
+   font-size: 19px;
+}
+
+ .bg-2{
+   background-image: url("./images/close-up-fingerprint-reader.jpg");
+   background-size: cover;
+   background-position: cover cover;
+   padding: 10px 20px;
+   margin-top: 10px;
+}
+
+ .bg-2 .small{
+   width: 230px;
+   height: 270px;
+   background: white;
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   padding: 10px 15px;
+   box-shadow: 6px 8px 10px rgba(0,0,0,0.5);
+}
+
+.small h1{
+   font-size: 17px;
+   color: black;
+   font-family: 'Noto Sans';
+}
+
+.small p{
+   color: black;
+   font-size: 15px;
+   margin: 0px;
+   line-height: 20px;
+   font-family: 'Noto Sans';
+   font-weight: normal;
+}
+
+.small li{
+   color: black;
+   font-size: 15px;
+   font-family: 'Noto Sans';
+}
+
+.container7 .bg-3{
+   background-image: url("./images/bernard-hermant-IhcSHrZXFs4-unsplash.jpg");
+   background-size: cover;
+   background-position: cover cover;
+   padding: 10px 20px;
+   margin-top: 10px;
+}
+
+.container7 .bg-3 .small-1{
+   width: 230px;
+   height: 270px;
+   background: #68b038;
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   padding: 10px 15px;
+   box-shadow: 6px 8px 10px rgba(0,0,0,0.5);
+}
+
+.small-1 h1{
+   font-size: 17px;
+   color: white;
+   font-family: 'Noto Sans';
+}
+
+.small-1 p{
+   color: white;
+   font-size: 15px;
+   margin: 0px;
+   line-height: 20px;
+   font-family: 'Noto Sans';
+   font-weight: normal;
+}
+
+.small-1 li{
+   color: white;
+   font-size: 15px;
+   font-family: 'Noto Sans';
+}
+
+.small-1 .bi-check{
+   color: white;
+}
+
+.container7 h5{
+   margin-top: 10px;
+   font-size: 16px;
+   font-weight: normal;
+   font-family:'Noto Sans';
+   padding-top:5px;
+   color:white;
+   line-height: 30px;
+}
+
+.container7 a{
+   color: #f88000;
+   text-decoration: underline;
+}
+
+.container7 .bi-star-fill{
+   color: #f88000;
+}
+
+.container7 h6{
+   font-weight: normal;
+   font-size: 16px;
+   color: white;
+   opacity: 0.8;
+   font-family: 'Noto Sans';
+}
+
+ #small-btn{
+   background: white;
+   color: black;
+   padding: 10px 15px;
+   border: none;
+   margin-bottom: 10px;
+   border-radius: 25px;
+   font-weight: bold;
+}
+
+#small-btn:hover{
+   background: #68b038;
+   color: white;
+}
+
+
+/*-----section7-----*/
+#gallery-work .col-md{
+   margin-bottom: 20px;
+   padding-bottom: 10px;
+}
+
+.container8 h1{
+   margin-top: 10px;
+   font-size: 27px;
+   font-weight: bolder;
+   font-family:'Noto Sans';
+   padding-top:5px;
+   color: black;
+}
+
+.small p{
+   margin-bottom: 20px;
+}
+
+.container8 p{
+   line-height: 30px;
+   padding-top: 5px;
+   font-family: 'Noto Sans';
+   font-size: 15px;
+   font-weight: 500;
+   color: black;
+   opacity: 0.7;
+   margin-bottom: 20px;
+}
+
+.bg-1{
+   background-image: url("./images/man-is-reaching-his-hand-push-fire-alarm-hand-station.jpg");
+   background-size: cover;
+   background-position: cover cover;
+   padding: 10px 20px;
+   margin-top: 10px;
+}
+
+#bg-1-button{
+   margin-top: 150px;
+   padding:10px 15px;
+   background:#68b038;
+   border: none;
+   color: white;
+}
+
+.container8 .small{
+   padding: 10px 15px;
+   background: #e8e8e8;
+   padding-bottom: 20px;
+}
+
+.container8 h2{
+   margin-top: 10px;
+   font-size: 22px;
+   font-weight: bold;
+   font-family:'Noto Sans';
+   padding-top:5px;
+   color: black;
+   text-align: center;
+}
+
+.container8 a{
+   text-decoration: none;
+   color: #f88000;
+   text-decoration: underline;
+}
+
+.bg-2{
+   background-image: url("./images/close-up-fingerprint-reader.jpg");
+   background-size: cover;
+   background-position: cover cover;
+   padding: 10px 20px;
+   margin-top: 10px;
+}
+
+.container8 .bg-3{
+   background-image: url("./images/cctv-security-technology-with-lock-icon-digital-remix.jpg");
+   background-size: cover;
+   background-position: cover cover;
+   padding: 10px 20px;
+   margin-top: 10px;
+}
+
+.container8 .bg-4{
+   background-image: url("./images/close-up-woman-checking-security-camera.jpg");
+   background-size: cover;
+   background-position: cover cover;
+   padding: 10px 20px;
+   margin-top: 10px;
+}
+
+.container8 .bg-5{
+   background-image: url("./images/scanning-finger-coronavirus-contaminated-fingerprint-access-control.jpg");
+   background-size: cover;
+   background-position: cover cover;
+   padding: 10px 20px;
+   margin-top: 10px;
+}
+
+.container8 h3{
+   margin-top: 10px;
+   font-size: 18px;
+   font-weight: 500;
+   font-family:'Noto Sans';
+   padding-top:5px;
+   color: black;
+   text-align: left;
+}
+
+.container8 a{
+   color: #f88000;
+   text-decoration: underline;
+   font-weight: bold;
+   font-size: 17px;
+   font-family: 'Noto Sans';
+}
+
+
+/*scrolling-section*/
+.scrolling-col-techbrand{
+   display: inline;
+   margin-right: 10px;
+}
+
+.scrolling-col-Sauter{
+   display: inline;
+   margin-right: 10px;
+}
+
+.scrolling-col-evolved{
+   display: inline;
+   margin-right: 10px;
+}
+
+.scrolling-col-sMatrics{
+   display: inline;
+   margin-right: 10px;
+}
+
+
+/*---scrolling-section text---*/
+
+.scrolling-col-techbrand p{
+  display: inline;
+  font-weight: bold;
+  font-family:'Noto Sans';
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.scrolling-col-sMatrics p{
+  display: inline;
+  font-weight: bold;
+  font-family:'Noto Sans';
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.scrolling-col-Sauter p{
+  display: inline;
+  font-weight: bold;
+  font-family:'Noto Sans';
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.scrolling-col-evolved p{
+  display: inline;
+  font-weight: bold;
+  font-family:'Noto Sans';
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.scrolling{
+ width: 100%;
+ font-size: small;
+ overflow-x: scroll;
+ float: right;
+ color: white;
+}
+
+#col{
+  padding: 0;
+  margin: 30px;
+  transform: translateX(100%);
+  animation-name:scrolling;
+  animation-duration:20s;
+  transition-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  position: relative;
+}
+
+
+@keyframes scrolling{
+  100%{
+    transform: translateX(-40%);
+  }
+}
+
+/* End of scrolling section*/
+
+
+/*-----section8-----*/
+
+.container9{
+  background: #f88000;
+}
+
+.container9 h1{
+  font-size: 30px;
+  font-weight: bolder;
+  font-family:'Noto Sans';
+  color:white;
+}
+
+.container9 p{
+  line-height: 30px;
+  padding-top: 5px;
+  font-family: 'Noto Sans';
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+ #my-form{
+  background: white;
+  padding: 15px;
+  box-shadow: 7px 8px 10px rgba(0,0,0,0.3);
+  border-radius: 3px;
+}
+
+#my-form #home{
+  padding: 10px 15px;
+  display: block;
+  font-weight: bold;
+}
+
+.container9 .box{
+  border: 1px solid #c0c0c0;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+#my-form select{
+  padding: 10px 15px;
+  background: #e8e8e8;
+  border-radius: 3px;
+  border: none;
+}
+
+
+#my-form select:focus {
+ outline: none;
+  }
+  
+   #my-form .name{
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background: #e8e8e8;
+    color:black;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+  }
+  
+  #my-form .name:focus{
+    outline: none;
+  }
+  
+   #name{
+    border: 2px solid black;
+  }
+  
+  #small{
+    margin-right: 10px;
+  }
+  
+ .error{
+  background: #68b038;
+  color: white;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+
+#submit{
+  width: 100%;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  padding: 20px 0px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#submit:hover{
+  border:2px solid black;
+  background: transparent;
+  color: black;
+}
+
+.container9 #schedule-box{
+  margin-top: 140px;
+}
+
+.carousel-inner p{
+  font-family: 'Noto Sans';
+  color: white;
+  padding-bottom: 20px;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+ .container9 .carousel-inner{
+   background: black;
+   padding:15px;
+   margin-top: 20px;
+   border-radius: 5px;
+ }
+ 
+.container9 .carousel-inner img{
+  width: 50px;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.carousel-inner h1{
+  text-decoration: underline;
+}
+
+.carousel-inner h2{
+  font-family: 'Noto Sans';
+  color: white;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.carousel-inner .bi-check{
+  color: #f88000;
+  font-size: 19px;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 20px;
+  width: 30px;
+}
+
+#active h4{
+  padding-top: 150px;
+  font-weight: bold;
+  font-family: 'Noto Sans';
+  font-size: 21px;
+  color: white;
+}
+
+#active2 h4{
+  padding-top: 100px;
+}
+
+.carousel-inner h4{
+  font-weight: bold;
+  font-family: 'Noto Sans';
+  font-size: 21px;
+  color: white;
+}
+
+.carousel-inner .active strong{
+  font-size: 17px;
+  font-weight: normal;
+  font-family: 'Noto Sans';
+}
+
+
+/*-----section9-----*/
+
+.container10{
+  background: #e8e8e8;
+}
+
+.container10 h1{
+  font-size: 30px;
+  font-weight: bolder;
+  font-family:'Noto Sans';
+  color:black;
+}
+
+.container10 p{
+  line-height: 30px;
+  padding-top: 5px;
+  font-family: 'Noto Sans';
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.container10 h2{
+ margin-top: 10px;
+  font-size: 21px;
+  font-weight: normal;
+  font-family:'Noto Sans';
+  padding-top:5px;
+  color: #f88000;
+}
+
+.container10 h3{
+  padding-top: 10px;
+  font-size: 19px;
+  font-weight: bold;
+  font-family:'Noto Sans';
+  padding-top:5px;
+  color:black;
+}
+
+.container10 .col-md{
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.container10 img{
+  width: 350
+}
+
+ .content{
+  background: white;
+  padding: 16px;
+  height: 400px;
+}
+
+#overlay-btn5{
+  border:2px solid #808888;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  font-weight: bold;
+  text-decoration:none;
+}
+
+#overlay-btn5:hover{
+ background: black;
+  background: transparent;
+  color: black;
+}
+
+
+/*----foooter----*/
+
+.footer{
+  background: black;
+  color: white;
+  position: absolute;
+  padding-top: 15px;
+  margin-top: 10px;
+}
+
+/*--------section1 of footer-----*/
+.footer .row-footer{
+  padding-top: 10px;
+}
+
+.col-footer{
+  padding-top: 10px;
+}
+
+.col-footer h1{
+  font-size: 18px;
+  font-weight: bold;
+  font-family:'Noto Sans';
+  color: white;
+}
+
+.col-footer h5{
+  font-size: 16px;
+  font-weight: bold;
+  font-family:'Noto Sans';
+  color: white;
+}
+
+.col-footer h4{
+  font-size: px;
+  font-weight: bold;
+  font-family:'Noto Sans';
+  color:#f88000;
+}
+
+
+.col-footer p{
+  font-size: 14px;
+  font-weight: bold;
+  font-family:'Noto Sans';;
+  color: white;
+  opacity: 0.7;
+}
+
+.footer-bottom h2 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Noto Sans';
+  color: black;
+}
+
+.footer1{
+  background: #181818;
+  padding: 10px;
+}
+
+.icons .bi{
+  color: #68b038;
+  margin-left: 10px;
+ padding-top: 10px;
+ margin-top: 20px;
+}
+
+.footer-bottom{
+  color: black;
+  background: #e8e8e8;
+  padding:10px 20px;
+}
+
+.footer-bottom p{
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Noto Sans';
+  color: black;
+  opacity: 0.7;
+}
+
+.footer a{
+   padding-top: 20px;
+   font-size: 14px;
+   font-weight: bold;
+   font-family: 'Noto Sans';
+   position: relative;
+   color: white;
+   text-decoration: none;
+   opacity: 0.7;
+}
+
+.footer a:hover{
+  font-size: 16px;
+  font-weight: bold;
+  color: #f88000;
+}
+
+.footer ul{
+  list-style: none;
+}
+
+.footer li{
+  margin-top: 10px;
+}
+
+.footer #btn{
+  font-size: 13px;
+  font-family: 'Noto Sans';
+  font-weight: bold;
+  border-bottom:2px solid #f88000;
+  color: white;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.footer #btn:hover{
+  background: #68b038;
+  color: white;
+}
+
+/*quote page*/
+
+  #overlay-bg1{
+     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/pawel-czerwinski-OfwiURcZwYw-unsplash.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+   }
+   
+    #overlay-bg1 h1{
+      color: white;
+      font-size: 40px;
+      font-family: 'Noto Sans';
+      font-weight: bold;
+    }
+
+  #overlay-bg2{
+     background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("./images/scanning-finger-coronavirus-contaminated-fingerprint-access-control.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding: 30px;
+   }
+    
+    #overlay-bg2 h1{
+      color: white;
+      font-size: 27px;
+      font-family: 'Noto Sans';
+      font-weight: bold;
+      padding: 20px 0px;
+    }
+   
+  #overlay-bg2 h3{
+      color: white;
+      font-size: 22px;
+      font-family: 'Noto Sans';
+      font-weight: bold;
+      padding: 20px 0px;
+    }
+    
+   #overlay-bg2 p{
+    color: white;
+    font-size: 16px;
+    font-family: 'Noto Sans';
+    font-weight: normal;
+    }
+    
+  .quote-content h2{
+      color: black;
+      font-size: 24px;
+      font-family: 'Noto Sans';
+      font-weight:bold;
+      padding: 60px 0px;
+    }
+
+#quote-content1{
+  background: white;
+  padding: 30px 15px;
+  border-bottom: 7px solid black;
+}
+
+.quote-content{
+  margin-bottom: 20px;
+}
+
+ #textbox{
+  width: 100%;
+  border: none;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: #e8e8e8;
+  color:black;
+  padding-bottom: 200px;
+  font-size: 17px;
+}
+
+::placeholder{
+  font-size: 18px;
+  padding: 10px;
+  color: #808888;
+}
+
+/*home-classic-page*/
+
+  #overlay-bg3{
+     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url("./images/bernard-hermant-IhcSHrZXFs4-unsplash.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+   }
+
+ #overlay-bg3 h1{
+      color: white;
+      font-size: 30px;
+      font-family: 'Noto Sans';
+      font-weight: bolder;
+    }
+
+.flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  background: lightgrey;
+  padding-top: 10px;
+}
+
+.col01 h1{
+  font-family: 'Noto Sans';
+  color: #68b038; 
+  font-weight: bolder;
+  font-size: 90px;
+}
+
+.col02 h1{
+  font-family: 'Noto Sans';
+  color:black; 
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.col02 h6{
+  font-size: 16px;
+  color: #808888;
+  font-weight: bold;
+}
+
+.col02 .bi{
+  color: #f88000;
+}
+
+#overlay-bg3 p{
+  font-family: 'Noto Sans';
+  color:white; 
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  opacity: 0.8;
+}
+
+#content-small-item img{
+  width: 50px;
+  padding-top: 10px;
+}
+
+#content-small{
+  background: white;
+}
+
+#content-small-item h1{
+  font-size: 18px;
+}
+
+.container4 #scroll{
+  height: 550px;
+  overflow-y: auto;
+  overflow-x: scroll;
+}
+
+#container4{
+  background: #181818;
+  color: white;
+}
+
+#rollable .col{
+  padding: 15px 10px;
+  border: 1px solid silver;
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+#rollable .col:hover{
+ background:  #68b038;
+ color: white;
+}
+
+#rollable h4{
+  font-size: 22px;
+ border: 2px solid silver;
+ padding: 10px 20px;
+ border-radius: 50%;
+ margin-bottom: 10px;
+ height: 60px;
+ text-align: center;
+}
+
+#rollable p{
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Noto Sans';
+  text-align: center;
+}
+
+.down-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.down-article div{
+  height: 50px;
+  padding: 20px 25px;
+  background: #f88000;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius:50%;
+  width: 50px;
+  justify-content: center;
+}
+
+.down-article h3{
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.down-article h1{
+  font-size: 30px;
+  color:white;
+}
+
+/*Home product page*/
+
+  #overlay-bg4{
+     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url("./images/cctv-security-technology-with-lock-icon-digital-remix.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+   }
+
+.setup{
+  background: #68b038;
+  color: white;
+  padding: 10px 15px;
+  border-end-end-radius: 20px;
+}
+
+.setup-small{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#container4 .bi-telephone{
+  font-size: 16px;
+  margin-right: 10px;
+  color: #f88000;
+}
+
+#btn01{
+  border: none;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+#btn01:hover{
+  color: #68b038;
+}
+
+#overlay-bg01{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url("./images/scanning-finger-coronavirus-contaminated-fingerprint-access-control.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+     transition: transform 0.5s;
+}
+
+#overlay-bg01:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/cctv-security-technology-with-lock-icon-digital-remix.jpg");
+   transform: translateY(-15px);
+}
+
+#overlay-bg02{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./images/bernard-hermant-IhcSHrZXFs4-unsplash.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+     transition: transform 0.5s;
+}
+
+#overlay-bg02:hover{
+  background: black;
+   transform: translateY(-15px);
+}
+
+#overlay-bg03{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./images/cctv-security-technology-with-lock-icon-digital-remix.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+     transition: transform 0.5s;
+}
+
+#overlay-bg03:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/cctv-security-technology-with-lock-icon-digital-remix.jpg");
+   transform: translateY(-15px);
+}
+
+#overlay-bg04{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./images/scanning-finger-coronavirus-contaminated-fingerprint-access-control.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+     transition: transform 0.5s;
+}
+
+#overlay-bg04:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/cctv-security-technology-with-lock-icon-digital-remix.jpg");
+   transform: translateY(-15px);
+}
+
+.goo{
+  height: 8px;
+  width: 100%;
+  background:#f88000;
+}
+
+.container8{
+  margin: 80px auto;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.small-cart-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th{
+  text-align: left;
+  padding: 5px;
+  background: #f88000;
+  color: white;
+  font-weight: bold;
+  font-family: 'Noto Sans';
+}
+
+td{
+  padding: 10px 5px;
+  border-bottom: 1px solid #68b038;
+}
+
+.small-cart-container p{
+  font-family: 'Noto Sans';
+}
+
+
+td:last-child{
+  text-align: right;
+}
+
+th:last-child{
+  text-align: right;
+  font-weight: bold;
+}
+
+#container8 .bi-check{
+  color: #68b038;
+  font-size: 20px;
+}
+
+#container8 .bi-x{
+  color: red;
+  font-size: 20px;
+}
+
+#overlay-bg04{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./images/jon-tyson-kR4K8nJ9JRc-unsplash.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+}
+
+#input-el{
+  width: 100%;
+  padding: 20px 15px;
+}
+
+/*-----leadership team----*/
+#gallery-content img{
+  width: 600px;
+}
+
+#gallery-content p{
+  font-size: 18px;
+  opacity: 0.7;
+  margin: 0;
+  font-weight: bold;
+}
+
+/*-----package page----*/
+#schedule-box2 .col-md{
+  height: 650px;
+  background: #fff;
+  border-left: 1px solid silver;
+}
+
+#schedule-box2 h2{
+  color: black;
+  font-size: 17px;
+}
+
+#schedule-box2 img{
+  width: 50px;
+}
+
+#schedule-box2 h1{
+  border-bottom: 1px solid black;
+}
+
+#schedule-box2 .bi{
+  color: #68b038;
+}
+
+.container9 h2{
+  font-size: 20px;
+font-family: 'Noto Sans';
+ padding: 20px 10px;
+ text-align: center;
+ color: white;
+}
+
+#overlay-bg06{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url("./images/2004.sm007.007..smart home realistic composition.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+}
+
+#overlay-bg06:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/2004.sm007.007..smart home realistic composition.jpg");
+   transform: translateY(-15px);
+}
+
+#overlay-bg07{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url("./images/2004.sm007.001..smart home realistic composition.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+}
+
+#overlay-bg07:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/2004.sm007.001..smart home realistic composition.jpg");
+   transform: translateY(-15px);
+}
+
+#overlay-bg08{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url("./images/19362662.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+}
+
+#overlay-bg08:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/19362662.jpg");
+   transform: translateY(-15px);
+}
+
+#overlay-bg09{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./images/two-clouds-with-camera.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+}
+
+#overlay-bg09:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/two-clouds-with-camera.jpg");
+   transform: translateY(-15px);
+}
+
+#overlay-bg10{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url("./images/2104.i105.024.S.m005.c13.isometric public security horizontal illustration.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+}
+
+#overlay-bg10:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/2104.i105.024.S.m005.c13.isometric public security horizontal illustration.jpg");
+   transform: translateY(-15px);
+}
+
+#overlay-bg11{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url("./images/12641.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+}
+
+#overlay-bg11:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/12641.jpg");
+   transform: translateY(-15px);
+}
+
+#overlay-bg12{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url("./images/2008.i211.011..video surveillance security cameras realistic set.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+}
+
+#overlay-bg12:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/2008.i211.011..video surveillance security cameras realistic set.jpg");
+   transform: translateY(-15px);
+}
+
+#overlay-bg13{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url("./images/2008.i211.007.P.m004.c25.video surveillance security cameras realistic set-06.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+}
+
+#overlay-bg13:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/2008.i211.007.P.m004.c25.video surveillance security cameras realistic set-06.jpg");
+   transform: translateY(-15px);
+}
+
+#overlay-bg14{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url("./images/turnstile-entrance-subway.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+}
+
+#overlay-bg14:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/turnstile-entrance-subway.jpg");
+   transform: translateY(-15px);
+}
+
+#overlay-bg15{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url("./images/6098802.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+}
+
+#overlay-bg15:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/6098802.jpg");
+   transform: translateY(-15px);
+}
+
+#overlay-bg16{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url("./images/cyber-security-protection-firewall-interface-concept.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+}
+
+#overlay-bg16:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/cyber-security-protection-firewall-interface-concept.jpg");
+   transform: translateY(-15px);
+}
+
+#overlay-bg17{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url("./images/rm373batch3-banner-08.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+}
+
+#overlay-bg16:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/rm373batch3-banner-08.jpg");
+   transform: translateY(-15px);
+}
+
+#overlay-bg18{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("./images/27682.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 50px;
+}
+
+#overlay-bg16:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/27682.jpg");
+   transform: translateY(-15px);
+}
+
+
+/*-----single blog post----*/
+ 
+.section3{
+  background-color: #f88000;
+  color: white;
+  padding: 15px 20px;
+  font-weight: bold;
+  font-family: 'Noto Sans';
+  border-radius: 7px;
+}
+
+#inputEl{
+  padding: 10px 20px;
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.small-post {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.small-post img {
+  width: 150px;
+}
+
+.small-post1 img{
+  width: 100px;
+}
+
+.small-post h3{
+  font-size: 18px;
+  padding-top: 0px;
+  margin-top: 4px;
+}
+
+.small-post p{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.section1 span{
+  padding:8px 12px;
+  background-color: #f88000;
+  color: white;
+  margin-left: 70px;
+  border-radius: 50%;
+}
+
+.section1, .section4, .section5{
+  border-bottom: 5px solid #f88000;
+}
+
+.row-product{
+  justify-content: space-between;
+  margin: 20px auto 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.content1{
+  background: #e8e8e8;
+  padding: 16px;
+  height: 280px;
+  margin-bottom: 15px;
+}
+
+.content1 h3{
+  font-size: 19px;
+}
+
+.container4 span{
+  color: #68B038;
+  margin-top: 10px;
+  display: block;
+}
+
+@media only screen and (max-width:768px){
+  
+  html, body {
+    overflow-x:hidden;
+    width:100%; 
+    margin: 0;
+    padding: 0;
+}
+  .logo{
+  background-color: #c0c0c0;
+  padding: 0px 20px;
+  border:none;
+  display: inline-block;
+  width: 130px;
+}
+
+.logo img{
+  width: 150px;
+}
+
+#quote-btn, #quote-btn1, #quote-btn2, #quotebtn1{
+  display: none;
+}
+
+#navmenu .phone{
+  display: none;
+}
+
+.hamburger{
+  display: block;
+}
+
+.hidden, .hidden2{
+  visibility: hidden;
+}
+
+.container4 .img{
+  border-radius: 7px;
+  width: 250px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+}
+
+#overlay-btn, #overlay-btn1, #overlay-btn2{
+  display: block;
+}
+
+.roller1 .col{
+  font-family: 'Raleway';
+  font-weight: bold;
+  color: black;
+  transition: 0.5s;
+  height: 500px;
+  padding: 10px 20px;
+}
+
+.content1{
+  background: #e8e8e8;
+  padding: 16px;
+  height: 180px;
+  margin-bottom: 15px;
+}
+
+#schedule-box2 .col-md{
+height: 500px;
+}
+}
