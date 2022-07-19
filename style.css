@@ -109,6 +109,7 @@ position:relative;
 }
 .dropdown-content .dropdown-services{
     border-left:2px solid lightgrey;
+    border-right:2px solid lightgrey;
     }
 
 
