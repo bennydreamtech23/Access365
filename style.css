@@ -107,15 +107,15 @@ position:relative;
      margin-top: 10px;
      overflow-y: auto;
 }
-.dropdown-content .dropdown-services{
-    border-left:2px solid lightgrey;
+.dropdown-content .dropdown-servic
     border-right:2px solid lightgrey;
     }
 
-
+/*
 .dropdown-content li{
    border-bottom: 1px solid lightgrey;
 }
+*/
 
   
 
