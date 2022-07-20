@@ -84,7 +84,7 @@ position:relative;
     
     #navmenu .navbar-nav li ul.dropdown li{
         display: block;
-        border-bottom: 1px solid #808888;
+        /*Put the border bottom cod here*/
         padding: 10px 5px;
     }
     
