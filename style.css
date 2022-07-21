@@ -195,7 +195,7 @@ position:relative;
 #quote-btn1 .nav-link{
    background: #68B038;
    color: white;
-   font-size: 15px;
+   font-size: 13px;
    width: 95px;
    text-align: center;
    height: 40px;
@@ -207,12 +207,12 @@ position:relative;
 }
 
 #quote-btn2{
-   font-size: 17px;
+   font-size: 15px;
    font-weight: bold;
 }
 
 #quotebtn1{
-   font-size: 14px;
+   font-size: 12px;
    font-weight: bold;
    margin: 0px;
    padding: 0px;
