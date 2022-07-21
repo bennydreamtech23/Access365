@@ -2253,3 +2253,22 @@ font-family: 'Noto Sans';
 height: 500px;
 }
 }
+@media only screen and (max-width:768px) and (orientation: landscape){
+
+#quotebtn1{
+
+   font-size: 11px;
+
+   font-weight: bold;
+
+   margin: 0px;
+
+   padding: 0px;
+
+   margin-left: 5px;
+
+}
+
+  
+
+}
